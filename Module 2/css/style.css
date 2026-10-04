@@ -1,0 +1,149 @@
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background: #f7f9fc;
+    color: #172033;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif
+}
+
+.hero {
+    background: linear-gradient(135deg, #eef5ff, #fff);
+    border-bottom: 1px solid #e5eaf2
+}
+
+.hero-card,
+.stat,
+.empty,
+.about {
+    background: #fff;
+    border: 1px solid #e5eaf2;
+    border-radius: 18px
+}
+
+.hero-card {
+    padding: 2rem
+}
+
+.stat {
+    padding: 1.25rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center
+}
+
+.stat>span {
+    font-size: 1.5rem;
+    background: #eef5ff;
+    padding: .7rem;
+    border-radius: 14px
+}
+
+.stat b {
+    display: block;
+    font-size: 1.2rem
+}
+
+.stat small {
+    color: #667085
+}
+
+.subject {
+    background: #fff;
+    border: 1px solid #e5eaf2;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 100%;
+    transition: .18s
+}
+
+.subject:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(30, 55, 90, .09)
+}
+
+.accent {
+    height: 6px
+}
+
+.subject-body {
+    padding: 1.25rem
+}
+
+.code {
+    font-size: .78rem;
+    color: #667085;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em
+}
+
+.about {
+    padding: 1.5rem
+}
+
+@media(max-width:576px) {
+    .display-5 {
+        font-size: 2.15rem
+    }
+}
+.task-stat {
+    background: #fff;
+    border: 1px solid #e5eaf2;
+    border-radius: 18px;
+    padding: 1.1rem 1.25rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center
+}
+.task-stat>span {
+    font-size: 1.35rem;
+    background: #eef5ff;
+    padding: .65rem;
+    border-radius: 14px
+}
+.task-stat b {
+    display: block;
+    font-size: 1.15rem
+}
+.task-stat small {
+    color: #667085
+}
+.task {
+    background: #fff;
+    border: 1px solid #e5eaf2;
+    border-radius: 18px;
+    height: 100%;
+    overflow: hidden;
+    transition: .18s
+}
+.task:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(30, 55, 90, .09)
+}
+.task-body {
+    padding: 1.25rem
+}
+.task-date {
+    color: #667085;
+    font-size: .88rem
+}
+.task-status {
+    font-size: .76rem;
+    font-weight: 700;
+    padding: .35rem .65rem;
+    border-radius: 50px
+}
+.task-status.pending {
+    background: #fff3cd;
+    color: #856404
+}
+.task-status.completed {
+    background: #d1e7dd;
+    color: #0f5132
+}
+.task.completed h5 {
+    text-decoration: line-through;
+    color: #667085
+}
